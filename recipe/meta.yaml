@@ -20,12 +20,12 @@ requirements:
     - cross-python_{{ target_platform }}   # [build_platform != target_platform]
     - python                               # [build_platform != target_platform]
     - numpy                                # [build_platform != target_platform]
-    - pybind11 >=2.10.0,<2.11.dev0         # [build_platform != target_platform]
+    - pybind11 >=2.11.1,<2.12.dev0         # [build_platform != target_platform]
   host:
     - python
     - numpy
-    - pybind11 >=2.10.0,<2.11.dev0
-    - setuptools >=67.6.0,<67.7.dev0
+    - pybind11 >=2.11.1,<2.12.dev0
+    - setuptools >=68.1.0,<68.2.dev0
     - pip
   run:
     - python
@@ -60,3 +60,4 @@ about:
 extra:
   recipe-maintainers:
     - ngam
+    - xhochy
