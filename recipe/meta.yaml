@@ -1,5 +1,5 @@
 {% set name = "ml_dtypes" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ml_dtypes-{{ version }}.tar.gz
-  sha256: ac5b58559bb84a95848ed6984eb8013249f90b6bab62aa5acbad876e256002c9
+  sha256: 8ab06a50fb9bf9666dd0fe5dfb4676fa2b0ac0f31ecff72a6c3af8e22c063453
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<39]
-  number: 1
+  number: 0
 
 requirements:
   build:
