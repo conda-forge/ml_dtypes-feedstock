@@ -26,12 +26,15 @@ requirements:
         - cross-python_${{ target_platform }}
         - python
         - numpy
+    - if: linux
+      then:
+        - make
+    - cmake
   host:
     - python
     - numpy
     - pip
     - scikit-build-core
-    - cmake
   run:
     - python
 
